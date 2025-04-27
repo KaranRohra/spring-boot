@@ -5,9 +5,13 @@ Each branch corresponds to a specific tutorial from the respective YouTube chann
 ## CodeSnippet
 - **Branch**: `CodeSnippet`
 - **YouTube Playlist**: [Spring Boot Videos](https://www.youtube.com/playlist?list=PL-bgVzzRdaPhNeXyQBtp8hMlUc14J2kRK)
-- **Video Link**: [Spring Boot Dependency Injection Explained: Types, Issues, and Solutions
-](https://www.youtube.com/watch?v=ZIuXwXoEym4&list=PL-bgVzzRdaPhNeXyQBtp8hMlUc14J2kRK&index=6)
+- **Video Link**: [Mastering Spring @ComponentScan Annotation: Deep Dive with Examples
+](https://www.youtube.com/watch?v=f_L9U_ncadE&list=PL-bgVzzRdaPhNeXyQBtp8hMlUc14J2kRK&index=7)
+
 ## Images
 
-### Bean Life Cycle
-![Bean Life Cycle](./images/bean-life-cyle.png)
+### Agenda
+![Agenda](./images/agenda/8/agenda.png)
+
+### Default Component Scan
+![Default Component Scan](./images/agenda/8/component-scan.png)

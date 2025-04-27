@@ -1,20 +1,23 @@
 package com.codesnippet.tutorial;
 
+import org.hibernate.annotations.Filter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
+
+import com.codesnippet.tutorial.controller.PaymentController;
 
 @SpringBootApplication
+// @ComponentScan(basePackages = {"com.codesnippet.helper",
+// "com.codesnippet.tutorial"})
+// @ComponentScan(basePackages = "com.codesnippet") Refer to the ScanConfig.java
+// file
+@ComponentScan(basePackages = "com.codesnippet.tutorial", excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = {
+		PaymentController.class }))
 public class TutorialApplication {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext applicationContext = SpringApplication.run(TutorialApplication.class, args);
-		User user = applicationContext.getBean(User.class);
-		Order fieldOrder = user.getFieldOrder();
-		Order setterOrder = user.getSetterOrder();
-		Order constructOrder = user.getConstructOrder();
-		fieldOrder.processOrder();
-		setterOrder.processOrder();
-		constructOrder.processOrder();
+		SpringApplication.run(TutorialApplication.class, args);
 	}
 }
