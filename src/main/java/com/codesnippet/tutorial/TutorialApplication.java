@@ -9,6 +9,5 @@ public class TutorialApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(TutorialApplication.class, args);
-		context.close(); // Added to close the application context and trigger @PreDestroy methods
 	}
 }
